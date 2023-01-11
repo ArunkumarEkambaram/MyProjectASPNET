@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="MyProject.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">MyProject</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <asp:HyperLink CssClass="nav-link" Text="Home" NavigateUrl="~/Index.aspx" runat="server" />
+                        </li>
+                        <li class="nav-item">
+                            <asp:HyperLink CssClass="nav-link" Text="Beverages" NavigateUrl="~/Beverages.aspx" runat="server" />
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Dairy Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sea Foods</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <asp:HyperLink CssClass="nav-link" Text="New User" ID="LinkRegistration" NavigateUrl="~/Registration.aspx" runat="server" />
+                        </li>
+                        <li class="nav-item">
+                            <asp:Button CssClass="nav-link btn btn-link text-capitalize" Text="" ID="BtnLoginOut" OnClick="BtnLoginOut_Click" runat="server" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
