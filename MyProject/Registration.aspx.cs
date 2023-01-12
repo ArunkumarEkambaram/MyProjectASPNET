@@ -60,16 +60,16 @@ namespace MyProject
             TxtPassword.Text = "";
         }
 
-        protected void CvEmailExists_ServerValidate(object source, ServerValidateEventArgs args)
-        {
-            if (returnValue == -1)
-            {
-                args.IsValid = false;
-            }
-            else
-            {
-                args.IsValid = true;
-            }
-        }
+        //protected void CvEmailExists_ServerValidate(object source, ServerValidateEventArgs args)
+        //{
+        //    if (returnValue == -1)
+        //    {
+        //        args.IsValid = false;
+        //    }
+        //    else
+        //    {
+        //        args.IsValid = true;
+        //    }
+        //}
     }
 }

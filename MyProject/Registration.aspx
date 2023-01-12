@@ -26,7 +26,7 @@
                                 <asp:RegularExpressionValidator Display="Dynamic" ForeColor="Red" ID="RevEmailId" runat="server" ControlToValidate="TxtEmailId" ErrorMessage="Please enter valid email id" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" />
                             </div>
                             <div class="row">
-                                <asp:CustomValidator Display="Dynamic" ForeColor="Red" ErrorMessage="Email Id already exists" ID="CvEmailExists" OnServerValidate="CvEmailExists_ServerValidate" runat="server" />
+                                <asp:CustomValidator Display="Dynamic" ForeColor="Red" ErrorMessage="Email Id already exists" ID="CvEmailExists" runat="server" />
                             </div>
                         </div>
                     </div>

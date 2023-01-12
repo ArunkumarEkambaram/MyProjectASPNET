@@ -25,7 +25,7 @@ namespace MyProject
                         }
                         else
                         {
-                            adapter.SelectCommand.Parameters.AddWithValue("@CategoryId", categoryid);
+                            adapter.SelectCommand.Parameters.AddWithValue("@CategoryId", categoryid.Value);
                             adapter.Fill(dt);
                             return dt;
                         }
